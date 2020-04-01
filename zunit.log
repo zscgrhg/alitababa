@@ -1,0 +1,49 @@
+2020-04-01 22:03:24.261 [main] INFO  c.e.alitababa.AlitababaApplication.logStarting(50) - Starting AlitababaApplication on DESKTOP-5LMI30V with PID 12996 (C:\data\alitababa\target\classes started by zscgrhg in C:\data\alitababa)
+2020-04-01 22:03:24.262 [main] INFO  c.e.alitababa.AlitababaApplication.logStartupProfileInfo(648) - No active profile set, falling back to default profiles: default
+2020-04-01 22:03:25.927 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize(90) - Tomcat initialized with port(s): 8080 (http)
+2020-04-01 22:03:25.952 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log(173) - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-01 22:03:25.962 [main] INFO  o.a.catalina.core.StandardService.log(173) - Starting service [Tomcat]
+2020-04-01 22:03:25.963 [main] INFO  o.a.catalina.core.StandardEngine.log(173) - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-01 22:03:26.131 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log(173) - Initializing Spring embedded WebApplicationContext
+2020-04-01 22:03:26.132 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext(284) - Root WebApplicationContext: initialization completed in 1535 ms
+2020-04-01 22:03:26.283 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(110) - HikariPool-1 - Starting...
+2020-04-01 22:03:26.497 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(123) - HikariPool-1 - Start completed.
+2020-04-01 22:03:27.998 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-01 22:03:28.190 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log(173) - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-01 22:03:28.225 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start(202) - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-01 22:03:28.229 [main] INFO  c.e.alitababa.AlitababaApplication.logStarted(59) - Started AlitababaApplication in 4.521 seconds (JVM running for 6.835)
+2020-04-01 22:03:38.037 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log(173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-01 22:03:38.038 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean(525) - Initializing Servlet 'dispatcherServlet'
+2020-04-01 22:03:38.046 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean(547) - Completed initialization in 8 ms
+2020-04-01 22:03:38.122 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(21) - 1 : [ { }, 1 ],trigger by entry:public java.util.List com.example.alitababa.action.UserController.find(java.lang.Long)
+2020-04-01 22:03:38.122 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(21) - 1 : [ { }, 1 ],trigger by entry:public java.util.List com.example.alitababa.action.UserController.find(java.lang.Long)
+2020-04-01 22:03:38.123 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPush(58) - canPush :true
+2020-04-01 22:03:38.123 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPush(58) - canPush :true
+2020-04-01 22:03:38.158 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(21) - 2 : [ { }, [ 1 ] ],trigger by entry:public abstract java.util.List com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.158 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(21) - 2 : [ { }, [ 1 ] ],trigger by entry:public abstract java.util.List com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.158 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPush(58) - canPush :true
+2020-04-01 22:03:38.158 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPush(58) - canPush :true
+2020-04-01 22:03:38.163 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(21) - 3 : [ { }, [ 1 ] ],trigger by entry:public java.util.List com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.163 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(21) - 3 : [ { }, [ 1 ] ],trigger by entry:public java.util.List com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.163 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPush(58) - canPush :false
+2020-04-01 22:03:38.163 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPush(58) - canPush :false
+2020-04-01 22:03:38.166 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(21) - 20 : [ { }, [ 1 ] ],trigger by entry:public abstract java.util.List com.baomidou.mybatisplus.core.mapper.BaseMapper.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.166 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(21) - 20 : [ { }, [ 1 ] ],trigger by entry:public abstract java.util.List com.baomidou.mybatisplus.core.mapper.BaseMapper.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.166 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPush(58) - canPush :true
+2020-04-01 22:03:38.166 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPush(58) - canPush :true
+2020-04-01 22:03:38.244 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(40) - 20 : [ { }, [ 1 ] ],trigger by exit:public abstract java.util.List com.baomidou.mybatisplus.core.mapper.BaseMapper.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.244 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(40) - 20 : [ { }, [ 1 ] ],trigger by exit:public abstract java.util.List com.baomidou.mybatisplus.core.mapper.BaseMapper.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.245 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPop(71) - canPop :true
+2020-04-01 22:03:38.245 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPop(71) - canPop :true
+2020-04-01 22:03:38.250 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(40) - 3 : [ { }, [ 1 ] ],trigger by exit:public java.util.List com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.250 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(40) - 3 : [ { }, [ 1 ] ],trigger by exit:public java.util.List com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.250 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPop(71) - canPop :true
+2020-04-01 22:03:38.250 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPop(71) - canPop :true
+2020-04-01 22:03:38.254 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(40) - 2 : [ { }, [ 1 ] ],trigger by exit:public abstract java.util.List com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.254 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(40) - 2 : [ { }, [ 1 ] ],trigger by exit:public abstract java.util.List com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)
+2020-04-01 22:03:38.254 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPop(71) - canPop :false
+2020-04-01 22:03:38.254 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPop(71) - canPop :false
+2020-04-01 22:03:38.256 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(40) - 1 : [ { }, 1 ],trigger by exit:public java.util.List com.example.alitababa.action.UserController.find(java.lang.Long)
+2020-04-01 22:03:38.256 [http-nio-8080-exec-1] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(40) - 1 : [ { }, 1 ],trigger by exit:public java.util.List com.example.alitababa.action.UserController.find(java.lang.Long)
+2020-04-01 22:03:38.256 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPop(71) - canPop :true
+2020-04-01 22:03:38.256 [http-nio-8080-exec-1] DEBUG m.etz.zunit.trace.InvocationContext.canPop(71) - canPop :true
