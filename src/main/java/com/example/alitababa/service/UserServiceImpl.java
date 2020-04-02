@@ -9,6 +9,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 @Service
 @TestSubject
 public class UserServiceImpl implements UserService {
@@ -17,6 +21,8 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
     @Override
     public List<User> selectBatchIds(Collection<Long> idList) {
-        return userMapper.selectBatchIds(idList);
+        List<User> users = IntStream.range(1, 10).parallel().mapToObj(x -> userMapper.selectById(x))
+                .filter(Objects::nonNull).collect(Collectors.toList());
+        return users;
     }
 }

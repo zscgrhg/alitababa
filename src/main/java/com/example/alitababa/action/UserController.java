@@ -13,10 +13,9 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-@TestSubject
+
 public class UserController {
     @Autowired
-
     UserService userService;
 
     @GetMapping("/user/{id}")
