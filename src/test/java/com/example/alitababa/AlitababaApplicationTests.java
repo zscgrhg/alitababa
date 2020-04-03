@@ -43,13 +43,13 @@ public class AlitababaApplicationTests {
     }
 
     //@Test
-    public void testSelect3() {
+   /* public void testSelect3() {
         System.out.println(("----- selectAll method test ------"));
         List<User> userList = userService.selectBatchIds(Collections.singletonList(1L));
         userService.modify(userList,"haha");
         List<User> m = userService.selectBatchIds(Collections.singletonList(1L));
         assert m.stream().allMatch(u->"haha".equals(u.getName()));
-    }
+    }*/
     @Test
     public void testSelect4() {
         System.out.println(("----- selectAll method test ------"));

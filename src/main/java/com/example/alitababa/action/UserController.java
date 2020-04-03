@@ -24,8 +24,11 @@ public class UserController {
     }
 
 
-    public List<User> modify(List<User> users,@PathVariable("name") String name){
+    public void modify(List<User> users,@PathVariable("name") String name){
 
-       return userService.modify(users,name);
+         userService.modify(users,name);
+         if(!users.stream().allMatch(u->"haha".equals(u.getName()))){
+             throw new RuntimeException("oops");
+         }
     }
 }

@@ -35,7 +35,8 @@ public interface UserMapper extends BaseMapper<User> {
         for (Type actualTypeArg : actualTypeArgs) {
 
         }*/
-        Method ss = UserMapper.class.getMethod("deleteById", Serializable.class);
+        Method ss = UserMapper.class.getMethod("updateById", com.example.alitababa.entity.User.class);
+        System.out.println(ss.toGenericString());
         //Method ss = UserMapper.class.getMethod("hello");
         System.out.println(ss.toGenericString());
         System.out.println(ss.getDeclaringClass());
