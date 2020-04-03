@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface UserService {
     List<User> selectBatchIds(@Param("coll") Collection<Long> idList);
+    void modify(List<User> users,String name);
 }

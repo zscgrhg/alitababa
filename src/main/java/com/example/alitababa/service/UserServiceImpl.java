@@ -25,4 +25,12 @@ public class UserServiceImpl implements UserService {
                 .filter(Objects::nonNull).collect(Collectors.toList());
         return users;
     }
+
+    @Override
+    public void modify(List<User> users, String name) {
+        for (User user : users) {
+            user.setName(name);
+            userMapper.updateById(user);
+        }
+    }
 }

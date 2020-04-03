@@ -22,4 +22,11 @@ public class UserController {
     public List<User> find(@PathVariable("id") Long id){
         return userService.selectBatchIds(Collections.singletonList(id));
     }
+
+    @GetMapping("/userm/{id}/{name}")
+    public List<User> modify(@PathVariable("id") Long id,@PathVariable("name") String name){
+        List<User> users = userService.selectBatchIds(Collections.singletonList(id));
+        userService.modify(users,name);
+        return userService.selectBatchIds(Collections.singletonList(id));
+    }
 }

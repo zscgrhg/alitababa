@@ -23,7 +23,7 @@ public class AlitababaApplicationTests {
     @Rule
     public final TestRule watchman = new ZUnitWatcher();
 
-    @Test
+   // @Test
     public void testSelect() {
         System.out.println(("----- selectAll method test ------"));
         List<User> userList = userService.selectBatchIds(Collections.singletonList(1L));
@@ -31,7 +31,7 @@ public class AlitababaApplicationTests {
         userList.forEach(System.out::println);
     }
 
-    @Test
+    //@Test
     public void testSelect2() {
         System.out.println(("----- selectAll method test ------"));
         List<User> userList = userService.selectBatchIds(Collections.singletonList(1L));
@@ -39,11 +39,21 @@ public class AlitababaApplicationTests {
         userList.forEach(System.out::println);
     }
 
-    @Test
+    //@Test
     public void testSelect3() {
         System.out.println(("----- selectAll method test ------"));
         List<User> userList = userService.selectBatchIds(Collections.singletonList(1L));
-        Assert.assertEquals(1, userList.size());
-        userList.forEach(System.out::println);
+        userService.modify(userList,"haha");
+        List<User> m = userService.selectBatchIds(Collections.singletonList(1L));
+        assert m.stream().allMatch(u->"haha".equals(u.getName()));
+    }
+    @Test
+    public void testSelect4() {
+        System.out.println(("----- selectAll method test ------"));
+        User user = new User();
+        user.setId(1L);
+        List<User> userList = Collections.singletonList(user);
+        userService.modify(userList,"haha");
+        assert 1==1;
     }
 }
