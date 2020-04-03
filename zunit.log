@@ -1,20 +1,40 @@
-2020-04-03 10:12:29.608 [main] INFO  c.e.a.AlitababaApplicationTests.logStarting(50) - Starting AlitababaApplicationTests on DESKTOP-5LMI30V with PID 9572 (started by zscgrhg in C:\data\alitababa)
-2020-04-03 10:12:29.609 [main] INFO  c.e.a.AlitababaApplicationTests.logStartupProfileInfo(648) - No active profile set, falling back to default profiles: default
-2020-04-03 10:12:31.909 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(110) - HikariPool-1 - Starting...
-2020-04-03 10:12:32.486 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(123) - HikariPool-1 - Start completed.
-2020-04-03 10:12:34.863 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-03 10:12:35.288 [main] WARN  o.s.b.a.g.t.GroovyTemplateAutoConfiguration.checkTemplateLocationExists(90) - Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
-2020-04-03 10:12:35.931 [main] INFO  c.e.a.AlitababaApplicationTests.logStarted(59) - Started AlitababaApplicationTests in 6.888 seconds (JVM running for 10.335)
-2020-04-03 10:12:35.961 [main] DEBUG m.etz.zunit.trace.InvocationContext.starting(53) - testSelect4(com.example.alitababa.AlitababaApplicationTests) starting
-2020-04-03 10:12:35.961 [main] DEBUG m.etz.zunit.trace.InvocationContext.starting(53) - testSelect4(com.example.alitababa.AlitababaApplicationTests) starting
-2020-04-03 10:12:36.308 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(25) - 1,trigger by entry:public void com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
-2020-04-03 10:12:36.308 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(25) - 1,trigger by entry:public void com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
-2020-04-03 10:12:36.314 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
-2020-04-03 10:12:36.314 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
-2020-04-03 10:12:36.448 [main] DEBUG m.etz.zunit.trace.InvocationContext.succeeded(36) - testSelect4(com.example.alitababa.AlitababaApplicationTests) succeeded
-2020-04-03 10:12:36.448 [main] DEBUG m.etz.zunit.trace.InvocationContext.succeeded(36) - testSelect4(com.example.alitababa.AlitababaApplicationTests) succeeded
-2020-04-03 10:12:36.448 [main] DEBUG m.etz.zunit.trace.InvocationContext.finished(60) - testSelect4(com.example.alitababa.AlitababaApplicationTests) finished
-2020-04-03 10:12:36.448 [main] DEBUG m.etz.zunit.trace.InvocationContext.finished(60) - testSelect4(com.example.alitababa.AlitababaApplicationTests) finished
-2020-04-03 10:12:36.453 [Thread-4] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-03 10:12:36.454 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource.close(350) - HikariPool-1 - Shutdown initiated...
-2020-04-03 10:12:36.457 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource.close(352) - HikariPool-1 - Shutdown completed.
+2020-04-03 10:19:53.623 [main] INFO  c.e.a.AlitababaApplicationTests.logStarting(50) - Starting AlitababaApplicationTests on DESKTOP-5LMI30V with PID 7392 (started by zscgrhg in C:\data\alitababa)
+2020-04-03 10:19:53.624 [main] INFO  c.e.a.AlitababaApplicationTests.logStartupProfileInfo(648) - No active profile set, falling back to default profiles: default
+2020-04-03 10:19:55.938 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(110) - HikariPool-1 - Starting...
+2020-04-03 10:19:56.493 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(123) - HikariPool-1 - Start completed.
+2020-04-03 10:19:58.845 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-03 10:19:59.265 [main] WARN  o.s.b.a.g.t.GroovyTemplateAutoConfiguration.checkTemplateLocationExists(90) - Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-04-03 10:19:59.867 [main] INFO  c.e.a.AlitababaApplicationTests.logStarted(59) - Started AlitababaApplicationTests in 6.801 seconds (JVM running for 10.262)
+2020-04-03 10:19:59.898 [main] DEBUG m.etz.zunit.trace.InvocationContext.starting(53) - testSelect4(com.example.alitababa.AlitababaApplicationTests) starting
+2020-04-03 10:19:59.898 [main] DEBUG m.etz.zunit.trace.InvocationContext.starting(53) - testSelect4(com.example.alitababa.AlitababaApplicationTests) starting
+2020-04-03 10:20:00.231 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(25) - 2,trigger by entry:public java.util.List com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String)
+2020-04-03 10:20:00.231 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(25) - 2,trigger by entry:public java.util.List com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String)
+2020-04-03 10:20:00.237 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
+2020-04-03 10:20:00.237 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
+2020-04-03 10:20:00.279 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(25) - 4,trigger by entry:public java.util.List com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
+2020-04-03 10:20:00.279 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(25) - 4,trigger by entry:public java.util.List com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
+2020-04-03 10:20:00.280 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
+2020-04-03 10:20:00.280 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
+2020-04-03 10:20:00.377 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(25) - 11,trigger by entry:public abstract java.util.List com.baomidou.mybatisplus.core.mapper.BaseMapper.selectBatchIds(java.util.Collection)
+2020-04-03 10:20:00.377 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(25) - 11,trigger by entry:public abstract java.util.List com.baomidou.mybatisplus.core.mapper.BaseMapper.selectBatchIds(java.util.Collection)
+2020-04-03 10:20:00.378 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
+2020-04-03 10:20:00.378 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
+2020-04-03 10:20:00.422 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(51) - 11,trigger by exit:public abstract java.util.List com.baomidou.mybatisplus.core.mapper.BaseMapper.selectBatchIds(java.util.Collection)
+2020-04-03 10:20:00.422 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(51) - 11,trigger by exit:public abstract java.util.List com.baomidou.mybatisplus.core.mapper.BaseMapper.selectBatchIds(java.util.Collection)
+2020-04-03 10:20:00.423 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
+2020-04-03 10:20:00.423 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
+2020-04-03 10:20:00.427 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(51) - 4,trigger by exit:public java.util.List com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
+2020-04-03 10:20:00.427 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(51) - 4,trigger by exit:public java.util.List com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
+2020-04-03 10:20:00.427 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
+2020-04-03 10:20:00.427 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
+2020-04-03 10:20:00.431 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(51) - 2,trigger by exit:public java.util.List com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String)
+2020-04-03 10:20:00.431 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(51) - 2,trigger by exit:public java.util.List com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String)
+2020-04-03 10:20:00.431 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
+2020-04-03 10:20:00.431 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
+2020-04-03 10:20:00.444 [main] DEBUG m.etz.zunit.trace.InvocationContext.succeeded(36) - testSelect4(com.example.alitababa.AlitababaApplicationTests) succeeded
+2020-04-03 10:20:00.444 [main] DEBUG m.etz.zunit.trace.InvocationContext.succeeded(36) - testSelect4(com.example.alitababa.AlitababaApplicationTests) succeeded
+2020-04-03 10:20:00.588 [main] DEBUG m.etz.zunit.trace.InvocationContext.finished(60) - testSelect4(com.example.alitababa.AlitababaApplicationTests) finished
+2020-04-03 10:20:00.588 [main] DEBUG m.etz.zunit.trace.InvocationContext.finished(60) - testSelect4(com.example.alitababa.AlitababaApplicationTests) finished
+2020-04-03 10:20:00.594 [Thread-4] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-03 10:20:00.596 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource.close(350) - HikariPool-1 - Shutdown initiated...
+2020-04-03 10:20:00.598 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource.close(352) - HikariPool-1 - Shutdown completed.

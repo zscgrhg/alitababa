@@ -13,7 +13,7 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-
+@TestSubject
 public class UserController {
     @Autowired
     UserService userService;
@@ -23,10 +23,9 @@ public class UserController {
         return userService.selectBatchIds(Collections.singletonList(id));
     }
 
-    @GetMapping("/userm/{id}/{name}")
-    public List<User> modify(@PathVariable("id") Long id,@PathVariable("name") String name){
-        List<User> users = userService.selectBatchIds(Collections.singletonList(id));
-        userService.modify(users,name);
-        return userService.selectBatchIds(Collections.singletonList(id));
+
+    public List<User> modify(List<User> users,@PathVariable("name") String name){
+
+       return userService.modify(users,name);
     }
 }

@@ -27,10 +27,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void modify(List<User> users, String name) {
+    public List<User>   modify(List<User> users, String name) {
         for (User user : users) {
             user.setName(name);
             userMapper.updateById(user);
         }
+        return userMapper.selectBatchIds(users.stream().map(User::getId).collect(Collectors.toList()));
     }
 }

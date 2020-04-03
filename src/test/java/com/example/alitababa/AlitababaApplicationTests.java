@@ -1,5 +1,6 @@
 package com.example.alitababa;
 
+import com.example.alitababa.action.UserController;
 import com.example.alitababa.entity.User;
 import com.example.alitababa.service.UserService;
 import moc.etz.zunit.builder.ZUnitWatcher;
@@ -20,6 +21,8 @@ import java.util.List;
 public class AlitababaApplicationTests {
     @Autowired
     private UserService userService;
+    @Autowired
+    private UserController userController;
     @Rule
     public final TestRule watchman = new ZUnitWatcher();
 
@@ -53,7 +56,7 @@ public class AlitababaApplicationTests {
         User user = new User();
         user.setId(1L);
         List<User> userList = Collections.singletonList(user);
-        userService.modify(userList,"haha");
+        userController.modify(userList,"haha");
         assert 1==1;
     }
 }
