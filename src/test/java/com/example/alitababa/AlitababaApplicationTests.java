@@ -38,4 +38,12 @@ public class AlitababaApplicationTests {
         Assert.assertEquals(5, userList.size());
         userList.forEach(System.out::println);
     }
+
+    @Test
+    public void testSelect3() {
+        System.out.println(("----- selectAll method test ------"));
+        List<User> userList = userService.selectBatchIds(Collections.singletonList(1L));
+        Assert.assertEquals(1, userList.size());
+        userList.forEach(System.out::println);
+    }
 }
