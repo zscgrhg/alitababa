@@ -1,5 +1,7 @@
 package com.example.alitababa.mapper;
 
+import org.springframework.aop.support.AopUtils;
+
 import java.lang.reflect.Type;
 
 public interface UUMapper extends UserMapper{
