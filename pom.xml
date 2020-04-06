@@ -35,9 +35,9 @@
 			<version>0.6.2</version>
 		</dependency>
 		<dependency>
-			<groupId>moc.etz</groupId>
-			<artifactId>zunit</artifactId>
-			<version>1.0.1-SNAPSHOT</version>
+			<groupId>com.zte</groupId>
+			<artifactId>sputnik</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>

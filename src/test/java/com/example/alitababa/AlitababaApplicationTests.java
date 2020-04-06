@@ -3,7 +3,7 @@ package com.example.alitababa;
 import com.example.alitababa.action.UserController;
 import com.example.alitababa.entity.User;
 import com.example.alitababa.service.UserService;
-import moc.etz.zunit.builder.ZUnitWatcher;
+import com.zte.sputnik.builder.SputnikWatcher;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -24,7 +25,7 @@ public class AlitababaApplicationTests {
     @Autowired
     private UserController userController;
     @Rule
-    public final TestRule watchman = new ZUnitWatcher();
+    public final TestRule watchman = new SputnikWatcher();
 
    // @Test
     public void testSelect() {
@@ -55,8 +56,9 @@ public class AlitababaApplicationTests {
         System.out.println(("----- selectAll method test ------"));
         User user = new User();
         user.setId(1L);
-        List<User> userList = Collections.singletonList(user);
-        userController.modify(userList,"haha");
+        List<User> userList = new ArrayList<>();
+        userList.add(user);
+        userController.modify(userList,"haha",userService);
         assert 1==1;
     }
 }

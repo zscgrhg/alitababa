@@ -1,40 +1,289 @@
-2020-04-05 18:02:57.091 [main] INFO  c.e.a.AlitababaApplicationTests.logStarting(50) - Starting AlitababaApplicationTests on DESKTOP-5LMI30V with PID 644 (started by zscgrhg in C:\data\alitababa)
-2020-04-05 18:02:57.092 [main] INFO  c.e.a.AlitababaApplicationTests.logStartupProfileInfo(648) - No active profile set, falling back to default profiles: default
-2020-04-05 18:02:59.514 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(110) - HikariPool-1 - Starting...
-2020-04-05 18:03:00.111 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(123) - HikariPool-1 - Start completed.
-2020-04-05 18:03:02.250 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize(171) - Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-05 18:03:02.694 [main] WARN  o.s.b.a.g.t.GroovyTemplateAutoConfiguration.checkTemplateLocationExists(90) - Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
-2020-04-05 18:03:03.329 [main] INFO  c.e.a.AlitababaApplicationTests.logStarted(59) - Started AlitababaApplicationTests in 6.834 seconds (JVM running for 10.858)
-2020-04-05 18:03:03.362 [main] DEBUG m.etz.zunit.trace.InvocationContext.starting(53) - testSelect4(com.example.alitababa.AlitababaApplicationTests) starting
-2020-04-05 18:03:03.362 [main] DEBUG m.etz.zunit.trace.InvocationContext.starting(53) - testSelect4(com.example.alitababa.AlitababaApplicationTests) starting
-2020-04-05 18:03:03.781 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(29) - 2,trigger by entry:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String)
-2020-04-05 18:03:03.781 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(29) - 2,trigger by entry:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String)
-2020-04-05 18:03:03.783 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
-2020-04-05 18:03:03.783 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
-2020-04-05 18:03:03.826 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(29) - 4,trigger by entry:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
-2020-04-05 18:03:03.826 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(29) - 4,trigger by entry:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
-2020-04-05 18:03:03.827 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
-2020-04-05 18:03:03.827 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
-2020-04-05 18:03:03.832 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(29) - 21,trigger by entry:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)
-2020-04-05 18:03:03.832 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atEntry(29) - 21,trigger by entry:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)
-2020-04-05 18:03:03.832 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
-2020-04-05 18:03:03.832 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPush(62) - canPush :true
-2020-04-05 18:03:03.934 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(72) - 21,trigger by exit:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)
-2020-04-05 18:03:03.934 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(72) - 21,trigger by exit:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)
-2020-04-05 18:03:03.934 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
-2020-04-05 18:03:03.934 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
-2020-04-05 18:03:03.938 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(63) - 4,trigger by exit:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
-2020-04-05 18:03:03.938 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(63) - 4,trigger by exit:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
-2020-04-05 18:03:03.938 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
-2020-04-05 18:03:03.938 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
-2020-04-05 18:03:03.943 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(63) - 2,trigger by exit:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String)
-2020-04-05 18:03:03.943 [main] DEBUG moc.etz.zunit.trace.TraceHelper.atExit(63) - 2,trigger by exit:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String)
-2020-04-05 18:03:03.943 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
-2020-04-05 18:03:03.943 [main] DEBUG m.etz.zunit.trace.InvocationContext.canPop(75) - canPop :true
-2020-04-05 18:03:03.956 [main] DEBUG m.etz.zunit.trace.InvocationContext.succeeded(36) - testSelect4(com.example.alitababa.AlitababaApplicationTests) succeeded
-2020-04-05 18:03:03.956 [main] DEBUG m.etz.zunit.trace.InvocationContext.succeeded(36) - testSelect4(com.example.alitababa.AlitababaApplicationTests) succeeded
-2020-04-05 18:03:04.121 [main] DEBUG m.etz.zunit.trace.InvocationContext.finished(60) - testSelect4(com.example.alitababa.AlitababaApplicationTests) finished
-2020-04-05 18:03:04.121 [main] DEBUG m.etz.zunit.trace.InvocationContext.finished(60) - testSelect4(com.example.alitababa.AlitababaApplicationTests) finished
-2020-04-05 18:03:04.127 [Thread-4] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown(208) - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-05 18:03:04.129 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource.close(350) - HikariPool-1 - Shutdown initiated...
-2020-04-05 18:03:04.133 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource.close(352) - HikariPool-1 - Shutdown completed.
+2020-04-06 19:54:24.317 [main] DEBUG c.z.sputnik.trace.InvocationContext.<clinit>(23) - load alitababa
+2020-04-06 19:54:25.114 [main] DEBUG com.zte.sputnik.instrument.BMUtil.getPid(41) - CurrentProcessId=9180
+2020-04-06 19:54:25.175 [main] DEBUG com.zte.sputnik.instrument.BMUtil.getPid(41) - CurrentProcessId=9180
+2020-04-06 19:54:25.666 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 1 is mapping to :com.example.alitababa.action.UserController.find(java.lang.Long,com.example.alitababa.service.UserService)
+2020-04-06 19:54:25.712 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 2 is mapping to :com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)
+2020-04-06 19:54:26.284 [main] DEBUG com.zte.sputnik.instrument.BMUtil.submitText(97) - submit[ {
+  "fileName" : "entry:com.example.alitababa.action.UserController.find(java.lang.Long,com.example.alitababa.service.UserService)",
+  "text" : "RULE entry:com.example.alitababa.action.UserController.find(java.lang.Long,com.example.alitababa.service.UserService)\r\nCLASS ^com.example.alitababa.action.UserController\r\nMETHOD  find(java.lang.Long,com.example.alitababa.service.UserService)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(1L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.action.UserController.find(java.lang.Long,com.example.alitababa.service.UserService)",
+  "text" : "RULE exit:com.example.alitababa.action.UserController.find(java.lang.Long,com.example.alitababa.service.UserService)\r\nCLASS ^com.example.alitababa.action.UserController\r\nMETHOD  find(java.lang.Long,com.example.alitababa.service.UserService)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(1L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.action.UserController.find(java.lang.Long,com.example.alitababa.service.UserService)",
+  "text" : "RULE exception:com.example.alitababa.action.UserController.find(java.lang.Long,com.example.alitababa.service.UserService)\r\nCLASS ^com.example.alitababa.action.UserController\r\nMETHOD  find(java.lang.Long,com.example.alitababa.service.UserService)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(1L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)",
+  "text" : "RULE entry:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)\r\nCLASS ^com.example.alitababa.action.UserController\r\nMETHOD  modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(2L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)",
+  "text" : "RULE exit:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)\r\nCLASS ^com.example.alitababa.action.UserController\r\nMETHOD  modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(2L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)",
+  "text" : "RULE exception:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)\r\nCLASS ^com.example.alitababa.action.UserController\r\nMETHOD  modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(2L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+} ]
+2020-04-06 19:54:26.413 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 3 is mapping to :com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)
+2020-04-06 19:54:26.416 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 4 is mapping to :com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)
+2020-04-06 19:54:26.418 [main] DEBUG com.zte.sputnik.instrument.BMUtil.submitText(97) - submit[ {
+  "fileName" : "entry:com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)",
+  "text" : "RULE entry:com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)\r\nINTERFACE ^com.example.alitababa.service.UserService\r\nMETHOD  modify(java.util.List,java.lang.String)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(3L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)",
+  "text" : "RULE exit:com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)\r\nINTERFACE ^com.example.alitababa.service.UserService\r\nMETHOD  modify(java.util.List,java.lang.String)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(3L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)",
+  "text" : "RULE exception:com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)\r\nINTERFACE ^com.example.alitababa.service.UserService\r\nMETHOD  modify(java.util.List,java.lang.String)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(3L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)",
+  "text" : "RULE entry:com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.service.UserService\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(4L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)",
+  "text" : "RULE exit:com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.service.UserService\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(4L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)",
+  "text" : "RULE exception:com.example.alitababa.service.UserService.selectBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.service.UserService\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(4L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+} ]
+2020-04-06 19:54:26.467 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 5 is mapping to :com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
+2020-04-06 19:54:26.469 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 6 is mapping to :com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)
+2020-04-06 19:54:26.479 [main] DEBUG com.zte.sputnik.instrument.BMUtil.submitText(97) - submit[ {
+  "fileName" : "entry:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)",
+  "text" : "RULE entry:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)\r\nCLASS ^com.example.alitababa.service.UserServiceImpl\r\nMETHOD  modify(java.util.List,java.lang.String)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(5L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)",
+  "text" : "RULE exit:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)\r\nCLASS ^com.example.alitababa.service.UserServiceImpl\r\nMETHOD  modify(java.util.List,java.lang.String)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(5L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)",
+  "text" : "RULE exception:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)\r\nCLASS ^com.example.alitababa.service.UserServiceImpl\r\nMETHOD  modify(java.util.List,java.lang.String)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(5L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)",
+  "text" : "RULE entry:com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)\r\nCLASS ^com.example.alitababa.service.UserServiceImpl\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(6L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)",
+  "text" : "RULE exit:com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)\r\nCLASS ^com.example.alitababa.service.UserServiceImpl\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(6L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)",
+  "text" : "RULE exception:com.example.alitababa.service.UserServiceImpl.selectBatchIds(java.util.Collection)\r\nCLASS ^com.example.alitababa.service.UserServiceImpl\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(6L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+} ]
+2020-04-06 19:54:26.524 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 7 is mapping to :com.example.alitababa.mapper.UserMapper.ss()
+2020-04-06 19:54:26.526 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 8 is mapping to :com.example.alitababa.mapper.UserMapper.deleteById(java.io.Serializable)
+2020-04-06 19:54:26.526 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 9 is mapping to :com.example.alitababa.mapper.UserMapper.hello()
+2020-04-06 19:54:26.532 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 10 is mapping to :com.example.alitababa.mapper.UserMapper.update(com.example.alitababa.entity.User,com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.534 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 11 is mapping to :com.example.alitababa.mapper.UserMapper.delete(com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.534 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 12 is mapping to :com.example.alitababa.mapper.UserMapper.insert(com.example.alitababa.entity.User)
+2020-04-06 19:54:26.535 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 13 is mapping to :com.example.alitababa.mapper.UserMapper.selectBatchIds(java.util.Collection)
+2020-04-06 19:54:26.536 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 14 is mapping to :com.example.alitababa.mapper.UserMapper.selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.537 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 15 is mapping to :com.example.alitababa.mapper.UserMapper.selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.538 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 16 is mapping to :com.example.alitababa.mapper.UserMapper.selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.539 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 17 is mapping to :com.example.alitababa.mapper.UserMapper.selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.540 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 18 is mapping to :com.example.alitababa.mapper.UserMapper.selectById(java.io.Serializable)
+2020-04-06 19:54:26.541 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 19 is mapping to :com.example.alitababa.mapper.UserMapper.selectByMap(java.util.Map)
+2020-04-06 19:54:26.542 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 20 is mapping to :com.example.alitababa.mapper.UserMapper.deleteBatchIds(java.util.Collection)
+2020-04-06 19:54:26.543 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 21 is mapping to :com.example.alitababa.mapper.UserMapper.selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.544 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 22 is mapping to :com.example.alitababa.mapper.UserMapper.deleteByMap(java.util.Map)
+2020-04-06 19:54:26.545 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 23 is mapping to :com.example.alitababa.mapper.UserMapper.selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.546 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 24 is mapping to :com.example.alitababa.mapper.UserMapper.selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)
+2020-04-06 19:54:26.546 [main] DEBUG c.zte.sputnik.instrument.MethodNames.build(70) - 25 is mapping to :com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)
+2020-04-06 19:54:26.548 [main] DEBUG com.zte.sputnik.instrument.BMUtil.submitText(97) - submit[ {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.ss()",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.ss()\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  ss()\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(7L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.ss()",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.ss()\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  ss()\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(7L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.ss()",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.ss()\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  ss()\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(7L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.deleteById(java.io.Serializable)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.deleteById(java.io.Serializable)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteById(java.io.Serializable)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(8L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.deleteById(java.io.Serializable)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.deleteById(java.io.Serializable)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteById(java.io.Serializable)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(8L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.deleteById(java.io.Serializable)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.deleteById(java.io.Serializable)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteById(java.io.Serializable)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(8L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.hello()",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.hello()\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  hello()\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(9L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.hello()",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.hello()\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  hello()\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(9L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.hello()",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.hello()\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  hello()\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(9L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.update(com.example.alitababa.entity.User,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.update(com.example.alitababa.entity.User,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  update(java.lang.Object,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(10L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.update(com.example.alitababa.entity.User,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.update(com.example.alitababa.entity.User,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  update(java.lang.Object,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(10L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.update(com.example.alitababa.entity.User,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.update(com.example.alitababa.entity.User,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  update(java.lang.Object,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(10L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.delete(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.delete(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  delete(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(11L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.delete(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.delete(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  delete(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(11L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.delete(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.delete(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  delete(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(11L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.insert(com.example.alitababa.entity.User)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.insert(com.example.alitababa.entity.User)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  insert(java.lang.Object)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(12L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.insert(com.example.alitababa.entity.User)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.insert(com.example.alitababa.entity.User)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  insert(java.lang.Object)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(12L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.insert(com.example.alitababa.entity.User)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.insert(com.example.alitababa.entity.User)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  insert(java.lang.Object)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(12L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectBatchIds(java.util.Collection)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(13L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectBatchIds(java.util.Collection)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(13L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectBatchIds(java.util.Collection)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(13L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(14L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(14L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectList(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(14L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(15L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(15L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectOne(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(15L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(16L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(16L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectObjs(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(16L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(17L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(17L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectMapsPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(17L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectById(java.io.Serializable)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectById(java.io.Serializable)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectById(java.io.Serializable)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(18L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectById(java.io.Serializable)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectById(java.io.Serializable)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectById(java.io.Serializable)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(18L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectById(java.io.Serializable)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectById(java.io.Serializable)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectById(java.io.Serializable)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(18L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectByMap(java.util.Map)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectByMap(java.util.Map)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectByMap(java.util.Map)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(19L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectByMap(java.util.Map)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectByMap(java.util.Map)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectByMap(java.util.Map)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(19L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectByMap(java.util.Map)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectByMap(java.util.Map)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectByMap(java.util.Map)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(19L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.deleteBatchIds(java.util.Collection)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.deleteBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(20L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.deleteBatchIds(java.util.Collection)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.deleteBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(20L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.deleteBatchIds(java.util.Collection)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.deleteBatchIds(java.util.Collection)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteBatchIds(java.util.Collection)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(20L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(21L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(21L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectCount(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(21L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.deleteByMap(java.util.Map)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.deleteByMap(java.util.Map)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteByMap(java.util.Map)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(22L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.deleteByMap(java.util.Map)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.deleteByMap(java.util.Map)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteByMap(java.util.Map)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(22L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.deleteByMap(java.util.Map)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.deleteByMap(java.util.Map)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  deleteByMap(java.util.Map)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(22L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(23L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(23L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectMaps(com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(23L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(24L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(24L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  selectPage(com.baomidou.mybatisplus.core.metadata.IPage,com.baomidou.mybatisplus.core.conditions.Wrapper)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(24L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+}, {
+  "fileName" : "entry:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)",
+  "text" : "RULE entry:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  updateById(java.lang.Object)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT ENTRY\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(25L)\r\nIF true\r\nDO\r\n    atEntry(_moc_etz_zunit_instrument_MethodNames_mid_,$*);\r\nENDRULE"
+}, {
+  "fileName" : "exit:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)",
+  "text" : "RULE exit:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  updateById(java.lang.Object)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(25L)\r\nIF true\r\nDO\r\n    atExit(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$!);\r\nENDRULE"
+}, {
+  "fileName" : "exception:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)",
+  "text" : "RULE exception:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)\r\nINTERFACE ^com.example.alitababa.mapper.UserMapper\r\nMETHOD  updateById(java.lang.Object)\r\n    HELPER com.zte.sputnik.trace.TraceHelper\r\nAT EXCEPTION EXIT\r\n    BIND\r\n    _moc_etz_zunit_instrument_MethodNames_mid_:java.lang.Long=java.lang.Long.valueOf(25L)\r\nIF true\r\nDO\r\n    atException(_moc_etz_zunit_instrument_MethodNames_mid_,$*,$^);\r\nENDRULE"
+} ]
+2020-04-06 19:54:26.570 [main] DEBUG com.zte.sputnik.instrument.BMUtil.getPid(41) - CurrentProcessId=9180
+2020-04-06 19:54:33.754 [main] DEBUG c.z.sputnik.trace.InvocationContext.starting(55) - testSelect4(com.example.alitababa.AlitababaApplicationTests) starting
+2020-04-06 19:54:34.088 [main] DEBUG com.zte.sputnik.trace.TraceHelper.atEntry(32) - 2,trigger by entry:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)
+2020-04-06 19:54:34.089 [main] DEBUG c.z.sputnik.trace.InvocationContext.canPush(63) - canPush :true
+2020-04-06 19:54:34.094 [main] DEBUG c.zte.sputnik.trace.TraceWriterImpl.write(23) - write:data\8ff8b95b\2020-04-06--19-54-34\1.in.json
+2020-04-06 19:54:34.132 [main] DEBUG com.zte.sputnik.trace.TraceHelper.atEntry(32) - 3,trigger by entry:com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)
+2020-04-06 19:54:34.132 [main] DEBUG c.z.sputnik.trace.InvocationContext.canPush(63) - canPush :true
+2020-04-06 19:54:34.133 [main] DEBUG c.zte.sputnik.trace.TraceWriterImpl.write(23) - write:data\8ff8b95b\2020-04-06--19-54-34\2.in.json
+2020-04-06 19:54:34.138 [main] DEBUG com.zte.sputnik.trace.TraceHelper.atEntry(32) - 5,trigger by entry:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
+2020-04-06 19:54:34.138 [main] DEBUG c.z.sputnik.trace.InvocationContext.canPush(63) - canPush :false
+2020-04-06 19:54:34.141 [main] DEBUG com.zte.sputnik.trace.TraceHelper.atEntry(32) - 25,trigger by entry:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)
+2020-04-06 19:54:34.141 [main] DEBUG c.z.sputnik.trace.InvocationContext.canPush(63) - canPush :true
+2020-04-06 19:54:34.141 [main] DEBUG c.zte.sputnik.trace.TraceWriterImpl.write(23) - write:data\8ff8b95b\2020-04-06--19-54-34\3.in.json
+2020-04-06 19:54:34.248 [main] DEBUG com.zte.sputnik.trace.TraceHelper.atExit(79) - 25,trigger by exit:com.example.alitababa.mapper.UserMapper.updateById(com.example.alitababa.entity.User)
+2020-04-06 19:54:34.248 [main] DEBUG c.z.sputnik.trace.InvocationContext.canPop(76) - canPop :true
+2020-04-06 19:54:34.248 [main] DEBUG c.z.sputnik.trace.InvocationContext.pop(147) - stackCounter -- :0
+2020-04-06 19:54:34.249 [main] DEBUG c.zte.sputnik.trace.TraceWriterImpl.write(23) - write:data\8ff8b95b\2020-04-06--19-54-34\3.out.json
+2020-04-06 19:54:34.252 [main] DEBUG com.zte.sputnik.trace.TraceHelper.atExit(70) - 5,trigger by exit:com.example.alitababa.service.UserServiceImpl.modify(java.util.List,java.lang.String)
+2020-04-06 19:54:34.253 [main] DEBUG c.z.sputnik.trace.InvocationContext.canPop(76) - canPop :true
+2020-04-06 19:54:34.253 [main] DEBUG c.z.sputnik.trace.InvocationContext.pop(147) - stackCounter -- :0
+2020-04-06 19:54:34.253 [main] DEBUG c.zte.sputnik.trace.TraceWriterImpl.write(23) - write:data\8ff8b95b\2020-04-06--19-54-34\2.out.json
+2020-04-06 19:54:34.257 [main] DEBUG com.zte.sputnik.trace.TraceHelper.atExit(70) - 3,trigger by exit:com.example.alitababa.service.UserService.modify(java.util.List,java.lang.String)
+2020-04-06 19:54:34.257 [main] DEBUG c.z.sputnik.trace.InvocationContext.canPop(76) - canPop :false
+2020-04-06 19:54:34.260 [main] DEBUG com.zte.sputnik.trace.TraceHelper.atExit(70) - 2,trigger by exit:com.example.alitababa.action.UserController.modify(java.util.List,java.lang.String,com.example.alitababa.service.UserService)
+2020-04-06 19:54:34.260 [main] DEBUG c.z.sputnik.trace.InvocationContext.canPop(76) - canPop :true
+2020-04-06 19:54:34.261 [main] DEBUG c.z.sputnik.trace.InvocationContext.pop(147) - stackCounter -- :0
+2020-04-06 19:54:34.261 [main] DEBUG c.zte.sputnik.trace.TraceWriterImpl.write(23) - write:data\8ff8b95b\2020-04-06--19-54-34\1.out.json
+2020-04-06 19:54:34.263 [main] DEBUG c.zte.sputnik.trace.TraceWriterImpl.write(36) - write:data\8ff8b95b\2020-04-06--19-54-34\1.subject.json
+2020-04-06 19:54:34.281 [main] DEBUG c.zte.sputnik.trace.TraceWriterImpl.write(36) - write:data\8ff8b95b\2020-04-06--19-54-34\2.subject.json
+2020-04-06 19:54:34.287 [main] DEBUG c.z.sputnik.trace.InvocationContext.succeeded(38) - testSelect4(com.example.alitababa.AlitababaApplicationTests) succeeded
+2020-04-06 19:54:34.442 [main] DEBUG com.zte.sputnik.builder.SpecFactory.writeSpec(256) - write :src\test\groovy\com.example.alitababa.action\UserController20200406195434modifyN1Spec.groovy
+2020-04-06 19:54:34.443 [main] DEBUG c.z.sputnik.trace.InvocationContext.finished(62) - testSelect4(com.example.alitababa.AlitababaApplicationTests) finished
