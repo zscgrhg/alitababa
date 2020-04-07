@@ -1,6 +1,7 @@
 package com.example.alitababa;
 
 import com.example.alitababa.action.UserController;
+import com.example.alitababa.entity.Order;
 import com.example.alitababa.entity.User;
 import com.example.alitababa.service.UserService;
 import com.zte.sputnik.builder.SputnikWatcher;
@@ -51,7 +52,7 @@ public class AlitababaApplicationTests {
         List<User> m = userService.selectBatchIds(Collections.singletonList(1L));
         assert m.stream().allMatch(u->"haha".equals(u.getName()));
     }*/
-    @Test
+    //@Test
     public void testSelect4() {
         System.out.println(("----- selectAll method test ------"));
         User user = new User();
@@ -59,6 +60,13 @@ public class AlitababaApplicationTests {
         List<User> userList = new ArrayList<>();
         userList.add(user);
         userController.modify(userList,"haha",userService);
+        assert 1==1;
+    }
+    @Test
+    public void testChain() {
+        System.out.println(("----- selectAll method test ------"));
+
+        Order order = userService.testChain(1L);
         assert 1==1;
     }
 }
