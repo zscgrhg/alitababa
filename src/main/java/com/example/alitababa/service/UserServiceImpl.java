@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     @Trace
     private UserMapper userMapper;
-    @Autowired
+    @Autowired(required = false)
     @Trace
     ServiceLocatorLocator serviceLocator;
 
@@ -44,8 +44,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public Order testChain(Long orderId) {
         Order byId = null;
+        ServiceLocatorLocator.testStaic(2,6);
         for (int i = 0; i < 5; i++) {
-            OrderService orderService = serviceLocator.findServiceLocator().findOrderService();
+            OrderService orderService = ServiceLocatorLocator.findServiceLocator().findOrderService();
             byId = orderService.findById(orderId);
         }
         return byId;

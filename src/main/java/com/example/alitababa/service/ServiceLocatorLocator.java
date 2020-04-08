@@ -1,12 +1,10 @@
 package com.example.alitababa.service;
 
-import com.zte.sputnik.parse.annotation.TestSubject;
-import org.springframework.stereotype.Service;
-
-@Service
-@TestSubject
 public class ServiceLocatorLocator {
-    public ServiceLocator findServiceLocator() {
+    public static ServiceLocator findServiceLocator() {
         return new ServiceLocator();
+    }
+    public static int testStaic(int x,int y) {
+        return x+y;
     }
 }
