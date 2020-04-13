@@ -48,9 +48,28 @@ public class AlitababaApplicationTest {
                     HttpServletResponse.class);
 
 
-    @Test
+    //@Test
     @SneakyThrows
     public void test() {
+        mvc.perform(MockMvcRequestBuilders
+                .get("/query/1")
+                .accept(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(status().isOk());
+    }
+    @Test
+    @SneakyThrows
+    public void test2() {
+        mvc.perform(MockMvcRequestBuilders
+                .get("/query/2")
+                .accept(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    @SneakyThrows
+    public void test3() {
         mvc.perform(MockMvcRequestBuilders
                 .get("/user/1")
                 .accept(MediaType.APPLICATION_JSON))
@@ -59,7 +78,7 @@ public class AlitababaApplicationTest {
     }
     @Test
     @SneakyThrows
-    public void test2() {
+    public void test4() {
         mvc.perform(MockMvcRequestBuilders
                 .get("/user/2")
                 .accept(MediaType.APPLICATION_JSON))

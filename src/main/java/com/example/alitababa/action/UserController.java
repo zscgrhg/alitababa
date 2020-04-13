@@ -17,7 +17,11 @@ public class UserController {
 
     @GetMapping("/user/{id}")
     public ServiceData find(@PathVariable("id") Long id, HttpServletRequest request, HttpServletResponse response) {
-        return userService.query(id, request, response);
+        return userService.queryParallel(id, request, response);
     }
 
+    @GetMapping("/query/{id}")
+    public ServiceData query(@PathVariable("id") Long id, HttpServletRequest request, HttpServletResponse response) {
+        return userService.query(id, request, response);
+    }
 }

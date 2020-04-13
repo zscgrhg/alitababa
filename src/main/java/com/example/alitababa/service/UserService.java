@@ -11,4 +11,5 @@ import java.util.List;
 
 public interface UserService {
     ServiceData query(Long id, HttpServletRequest request, HttpServletResponse response);
+    ServiceData queryParallel(Long id, HttpServletRequest request, HttpServletResponse response);
 }
