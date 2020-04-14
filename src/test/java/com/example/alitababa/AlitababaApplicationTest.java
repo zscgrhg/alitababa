@@ -1,9 +1,7 @@
 package com.example.alitababa;
 
-import com.example.alitababa.service.ServiceLocator;
-import com.example.alitababa.service.ServiceLocatorLocator;
-import com.example.alitababa.service.UserServiceImpl;
-import com.example.alitababa.service.WeatherService;
+import com.example.alitababa.service.*;
+import com.zte.sputnik.Sputnik;
 import com.zte.sputnik.builder.SputnikUTFactory;
 import lombok.SneakyThrows;
 import org.junit.Rule;
@@ -16,6 +14,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -30,18 +29,29 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 public class AlitababaApplicationTest {
 
+    static {
+        try {
+
+            //Sputnik.loadTtlAgent();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
 
     @Autowired
     private MockMvc mvc;
     @Rule
     public final SputnikUTFactory watchman = new SputnikUTFactory()
-            .subject(UserServiceImpl.class)
+            .addSubject(UserServiceImpl.class,
+                    WeatherServiceImpl.class)
             .mockFieldsHasAnnotation(Autowired.class)
             .mockClass(ServiceLocatorLocator.class,
                     ServiceLocator.class,
                     WeatherService.class,
                     HttpServletRequest.class,
                     HttpSession.class,
+                    RestTemplate.class,
                     HttpServletResponse.class);
 
 
@@ -54,7 +64,8 @@ public class AlitababaApplicationTest {
                 .andDo(print())
                 .andExpect(status().isOk());
     }
-    @Test
+
+    //@Test
     @SneakyThrows
     public void test2() {
         mvc.perform(MockMvcRequestBuilders
@@ -64,7 +75,7 @@ public class AlitababaApplicationTest {
                 .andExpect(status().isOk());
     }
 
-    @Test
+    //@Test
     @SneakyThrows
     public void test3() {
         mvc.perform(MockMvcRequestBuilders
@@ -73,6 +84,7 @@ public class AlitababaApplicationTest {
                 .andDo(print())
                 .andExpect(status().isOk());
     }
+
     @Test
     @SneakyThrows
     public void test4() {

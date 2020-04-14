@@ -21,6 +21,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public ServiceData query(Long id, HttpServletRequest request, HttpServletResponse response) {
         User user = userMapper.selectById(id);
+
         HttpSession session = request.getSession();
         Object attribute = session.getAttribute(user.getName());
         if (attribute != null && attribute instanceof ServiceData) {

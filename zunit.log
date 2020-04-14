@@ -1,6 +1,0 @@
-2020-04-14 00:14:02.924 [main] DEBUG com.zte.sputnik.instrument.BMUtil.getPid(65) - CurrentProcessId=5140
-2020-04-14 00:14:03.002 [main] DEBUG com.zte.sputnik.instrument.BMUtil.getPid(65) - CurrentProcessId=5140
-2020-04-14 00:14:03.033 [main] DEBUG com.zte.sputnik.instrument.BMUtil.loadAgent(98) - bm:agent successfully installed at pid localhost port 50695
-2020-04-14 00:14:03.033 [main] DEBUG com.zte.sputnik.instrument.BMUtil.loadAgent(101) - bm:config pushed.
-2020-04-14 00:14:03.033 [main] DEBUG com.zte.sputnik.instrument.BMUtil.getPid(65) - CurrentProcessId=5140
-2020-04-14 00:14:03.503 [main] ERROR c.z.s.extension.ObjectGroovyMethods.copyDirtyPropsTo(65) - null
