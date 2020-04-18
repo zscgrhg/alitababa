@@ -1,0 +1,5 @@
+2020-04-18 00:14:54.309 [main] DEBUG com.zte.sputnik.instrument.BMUtil.getPid(66) - CurrentProcessId=5544
+2020-04-18 00:14:54.389 [main] DEBUG com.zte.sputnik.instrument.BMUtil.getPid(66) - CurrentProcessId=5544
+2020-04-18 00:14:54.439 [main] DEBUG com.zte.sputnik.instrument.BMUtil.loadAgent(106) - bm:agent successfully installed at pid localhost port 60402
+2020-04-18 00:14:54.449 [main] DEBUG com.zte.sputnik.instrument.BMUtil.loadAgent(109) - bm:config pushed.
+2020-04-18 00:15:08.488 [main] ERROR c.z.s.extension.ObjectGroovyMethods.copyDirty(100) - java.lang.Integer cannot be cast to java.util.Collection

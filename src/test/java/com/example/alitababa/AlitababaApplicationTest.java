@@ -1,8 +1,8 @@
 package com.example.alitababa;
 
 import com.example.alitababa.service.*;
-import com.zte.sputnik.Sputnik;
 import com.zte.sputnik.builder.SputnikUTFactory;
+import com.zte.sputnik.extension.SputnikTtlRunner;
 import lombok.SneakyThrows;
 import org.junit.Rule;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.web.client.RestTemplate;
@@ -23,21 +23,12 @@ import javax.servlet.http.HttpSession;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@RunWith(SpringRunner.class)
+@RunWith(SputnikTtlRunner.class)
 @SpringBootTest(
         classes = AlitababaApplication.class)
 @AutoConfigureMockMvc
 public class AlitababaApplicationTest {
 
-    static {
-        try {
-
-            //Sputnik.loadTtlAgent();
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
-    }
 
     @Autowired
     private MockMvc mvc;
@@ -46,12 +37,13 @@ public class AlitababaApplicationTest {
             .addSubject(UserServiceImpl.class,
                     WeatherServiceImpl.class)
             .mockFieldsHasAnnotation(Autowired.class)
-            .mockClass(ServiceLocatorLocator.class,
+            .mockClasses(ServiceLocatorLocator.class,
                     ServiceLocator.class,
                     WeatherService.class,
                     HttpServletRequest.class,
                     HttpSession.class,
                     RestTemplate.class,
+                    ResponseEntity.class,
                     HttpServletResponse.class);
 
 
