@@ -4,6 +4,7 @@ import com.example.alitababa.service.*;
 import com.zte.sputnik.builder.SputnikUTFactory;
 import com.zte.sputnik.extension.SputnikTtlRunner;
 import lombok.SneakyThrows;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,6 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(
         classes = AlitababaApplication.class)
 @AutoConfigureMockMvc
+@Ignore
 public class AlitababaApplicationTest {
 
 
@@ -80,10 +82,13 @@ public class AlitababaApplicationTest {
     @Test
     @SneakyThrows
     public void test4() {
-        mvc.perform(MockMvcRequestBuilders
-                .get("/user/2")
-                .accept(MediaType.APPLICATION_JSON))
-                .andDo(print())
-                .andExpect(status().isOk());
+        for (int i = 0; i < 500; i++) {
+            System.out.println("round >>"+i);
+            mvc.perform(MockMvcRequestBuilders
+                    .get("/user/2")
+                    .accept(MediaType.APPLICATION_JSON))
+                    .andDo(print())
+                    .andExpect(status().isOk());
+        }
     }
 }
