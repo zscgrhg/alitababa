@@ -52,10 +52,7 @@ public class UserServiceImpl implements UserService {
         }
         String weather = "unkown";
         if (ServiceLocatorLocator.compute(id.intValue(), 1)) {
-            weather=  IntStream.range(1,4).parallel()
-                    .peek(x->{
-                        System.out.println(">>>"+Thread.currentThread().getName());
-                    }).mapToObj(x->
+            weather=  IntStream.range(1,4).parallel().mapToObj(x->
             {
                 ServiceLocator serviceLocator = ServiceLocatorLocator.findServiceLocator();
 
