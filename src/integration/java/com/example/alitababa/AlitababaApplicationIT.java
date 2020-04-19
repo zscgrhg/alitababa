@@ -3,6 +3,7 @@ package com.example.alitababa;
 import com.example.alitababa.service.*;
 import com.zte.sputnik.builder.SputnikUTFactory;
 import com.zte.sputnik.extension.SputnikTtlRunner;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,8 +27,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(
         classes = AlitababaApplication.class)
 @AutoConfigureMockMvc
-//@Ignore
-public class AlitababaApplicationTest {
+@Ignore
+public class AlitababaApplicationIT {
 
 
     @Autowired
@@ -78,7 +79,6 @@ public class AlitababaApplicationTest {
     }
 
     @Test
-
     public void test4() throws Exception{
         for (int i = 0; i < 1000; i++) {
             System.out.println("round >>"+i);
