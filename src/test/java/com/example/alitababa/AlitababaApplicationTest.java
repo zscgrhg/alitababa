@@ -3,8 +3,6 @@ package com.example.alitababa;
 import com.example.alitababa.service.*;
 import com.zte.sputnik.builder.SputnikUTFactory;
 import com.zte.sputnik.extension.SputnikTtlRunner;
-import lombok.SneakyThrows;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(
         classes = AlitababaApplication.class)
 @AutoConfigureMockMvc
-@Ignore
+//@Ignore
 public class AlitababaApplicationTest {
 
 
@@ -50,8 +48,8 @@ public class AlitababaApplicationTest {
 
 
     //@Test
-    @SneakyThrows
-    public void test() {
+
+    public void test() throws Exception{
         mvc.perform(MockMvcRequestBuilders
                 .get("/query/1")
                 .accept(MediaType.APPLICATION_JSON))
@@ -60,8 +58,8 @@ public class AlitababaApplicationTest {
     }
 
     //@Test
-    @SneakyThrows
-    public void test2() {
+
+    public void test2() throws Exception{
         mvc.perform(MockMvcRequestBuilders
                 .get("/query/2")
                 .accept(MediaType.APPLICATION_JSON))
@@ -70,8 +68,8 @@ public class AlitababaApplicationTest {
     }
 
     //@Test
-    @SneakyThrows
-    public void test3() {
+
+    public void test3() throws Exception{
         mvc.perform(MockMvcRequestBuilders
                 .get("/user/1")
                 .accept(MediaType.APPLICATION_JSON))
@@ -80,8 +78,8 @@ public class AlitababaApplicationTest {
     }
 
     @Test
-    @SneakyThrows
-    public void test4() {
+
+    public void test4() throws Exception{
         for (int i = 0; i < 1000; i++) {
             System.out.println("round >>"+i);
             mvc.perform(MockMvcRequestBuilders
