@@ -355,10 +355,10 @@
                     <parallel>classes</parallel>
                     <forkCount>1C</forkCount>
                     <reuseForks>true</reuseForks>
-                    <useFile>true</useFile>
+                    <useFile>false</useFile>
                     <argLine>-Xmx1024m</argLine>
                     <forkedProcessTimeoutInSeconds>0</forkedProcessTimeoutInSeconds>
-                    <forkedProcessExitTimeoutInSeconds>60</forkedProcessExitTimeoutInSeconds>
+                    <forkedProcessExitTimeoutInSeconds>180</forkedProcessExitTimeoutInSeconds>
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/*Spec.java</include>

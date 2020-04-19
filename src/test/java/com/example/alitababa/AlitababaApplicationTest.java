@@ -79,13 +79,15 @@ public class AlitababaApplicationTest {
                 .andExpect(status().isOk());
     }
 
-    @Test
+    //@Test
     @SneakyThrows
     public void test4() {
-        mvc.perform(MockMvcRequestBuilders
-                .get("/user/2")
-                .accept(MediaType.APPLICATION_JSON))
-                .andDo(print())
-                .andExpect(status().isOk());
+        for (int i = 0; i < 120; i++) {
+            mvc.perform(MockMvcRequestBuilders
+                    .get("/user/2")
+                    .accept(MediaType.APPLICATION_JSON))
+                    .andDo(print())
+                    .andExpect(status().isOk());
+        }
     }
 }
