@@ -28,7 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(
         classes = AlitababaApplication.class)
 @AutoConfigureMockMvc
-@Ignore
+//@Ignore
 public class AlitababaApplicationTest {
 
 
@@ -49,7 +49,7 @@ public class AlitababaApplicationTest {
                     HttpServletResponse.class);
 
 
-    //@Test
+    @Test
     @SneakyThrows
     public void test() {
         mvc.perform(MockMvcRequestBuilders
@@ -59,7 +59,7 @@ public class AlitababaApplicationTest {
                 .andExpect(status().isOk());
     }
 
-    //@Test
+    @Test
     @SneakyThrows
     public void test2() {
         mvc.perform(MockMvcRequestBuilders
@@ -69,7 +69,7 @@ public class AlitababaApplicationTest {
                 .andExpect(status().isOk());
     }
 
-    //@Test
+    @Test
     @SneakyThrows
     public void test3() {
         mvc.perform(MockMvcRequestBuilders
@@ -82,13 +82,10 @@ public class AlitababaApplicationTest {
     @Test
     @SneakyThrows
     public void test4() {
-        for (int i = 0; i < 1000; i++) {
-            System.out.println("round >>"+i);
-            mvc.perform(MockMvcRequestBuilders
-                    .get("/user/2")
-                    .accept(MediaType.APPLICATION_JSON))
-                    .andDo(print())
-                    .andExpect(status().isOk());
-        }
+        mvc.perform(MockMvcRequestBuilders
+                .get("/user/2")
+                .accept(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(status().isOk());
     }
 }

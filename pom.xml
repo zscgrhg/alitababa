@@ -322,9 +322,9 @@
                     <source>1.8</source>
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
-                    <compilerArgs>
-                        <!--<arg>-J-XX:PermSize=128m</arg>  -->
-                    </compilerArgs>
+                   <!-- <compilerArgs>
+                        <arg>-J-Xmx8192m -J-Xms1024m -parameters</arg>
+                    </compilerArgs>-->
                 </configuration>
             </plugin>
             <plugin>
@@ -351,6 +351,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
+                    <failIfNoTests>false</failIfNoTests>
                     <parallel>classes</parallel>
                     <forkCount>1C</forkCount>
                     <reuseForks>true</reuseForks>
