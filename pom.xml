@@ -311,6 +311,23 @@
                 <version>1.5.17.RELEASE</version>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <fork>true</fork>
+                    <meminitial>1024m</meminitial>
+                    <maxmem>8192m</maxmem>
+                    <parameters>true</parameters>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                    <compilerArgs>
+                        <!--<arg>-J-XX:PermSize=128m</arg>  -->
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+            <plugin>
                 <!-- The gmavenplus plugin is used to compile Groovy code. To learn more about this plugin,
                 visit https://github.com/groovy/GMavenPlus/wiki -->
                 <groupId>org.codehaus.gmavenplus</groupId>
@@ -335,12 +352,12 @@
                 <version>3.0.0-M4</version>
                 <configuration>
                     <parallel>classes</parallel>
-                    <forkCount>3</forkCount>
+                    <forkCount>1C</forkCount>
                     <reuseForks>true</reuseForks>
                     <useFile>true</useFile>
                     <argLine>-Xmx1024m</argLine>
                     <forkedProcessTimeoutInSeconds>0</forkedProcessTimeoutInSeconds>
-                    <forkedProcessExitTimeoutInSeconds>300</forkedProcessExitTimeoutInSeconds>
+                    <forkedProcessExitTimeoutInSeconds>60</forkedProcessExitTimeoutInSeconds>
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/*Spec.java</include>

@@ -82,7 +82,7 @@ public class AlitababaApplicationTest {
     @Test
     @SneakyThrows
     public void test4() {
-        for (int i = 0; i < 500; i++) {
+        for (int i = 0; i < 1000; i++) {
             System.out.println("round >>"+i);
             mvc.perform(MockMvcRequestBuilders
                     .get("/user/2")
