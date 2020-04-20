@@ -1,0 +1,25 @@
+
+<project  name="ssss">
+    <taskdef name="groovyc"
+             classname="org.codehaus.groovy.ant.Groovyc">
+        <classpath refid="maven.test.classpath"/>
+    </taskdef>
+    <macrodef name="testing">
+        <attribute name="sputnikMod"/>
+        <groovyc destdir="${project.build.testOutputDirectory}"
+                 srcdir="${basedir}/@{sputnikMod}"
+                 indy="true"
+                 listfiles="true">
+            <classpath refid="maven.test.classpath"/>
+        </groovyc>
+    </macrodef>
+    <target name="aaa">
+        <mkdir dir="${basedir}/src/test/groovy"/>
+        <mkdir dir="${project.build.testOutputDirectory}"/>
+        <parallel>
+           <testing sputnikMod="sputnik\mod1"/>
+           <testing sputnikMod="sputnik\mod2"/>
+           <testing sputnikMod="sputnik\mod3"/>
+        </parallel>
+    </target>
+</project>
