@@ -1,49 +1,61 @@
 import java.nio.file.Files
 import java.nio.file.Paths
-import java.nio.file.StandardCopyOption
+import java.util.concurrent.atomic.AtomicInteger
 
-def root = new File("sputnik")
-def files = root?.listFiles()
+def buildSpec(String round){
+    def antUtil=new groovy.util.AntBuilder()
+    def tempDir= Paths.get(project.build.directory).resolve("sputnik-temp")
+    def tempSrcDir= tempDir.resolve("src")
+    def sputnikClasses=Paths.get(project.build.directory).resolve("sputnik-classes")
+    antUtil.delete(dir:tempDir)
+    antUtil.mkdir(dir:tempDir)
+    antUtil.mkdir(dir:tempSrcDir)
+    antUtil.mkdir(dir:sputnikClasses)
+    def sourceDir=project.basedir.toPath().resolve(round).toFile()
+    List<File> sourceList=new ArrayList<>()
+    sourceDir.eachFileRecurse{
+        if(it.name.endsWith(".groovy")){
+            sourceList.add(it)
+        }
+    }
+    log.info("groovy files:${sourceList.size()}")
+    List<String> tempPkgs=new ArrayList<>()
+    def k=0
+    def stepSize=5
+    long start=System.currentTimeSeconds()
+    for (int i = 0; i < sourceList.size(); i+=stepSize) {
+        k++
+        String pkgName="pkg${i}"
+        def pkg=tempSrcDir.resolve(pkgName)
+        pkg.toFile().mkdirs()
+        tempPkgs.add(pkgName)
+        for (int j = 0; j < stepSize && (i + j < sourceList.size()); j++) {
+            def groovyFile = sourceList.get(i + j)
+            Files.copy(groovyFile.toPath(),pkg.resolve(groovyFile.getName()))
+        }
+    }
+    log.info("copy complete in ${(System.currentTimeSeconds()-start)} seconds")
+    def size=tempPkgs.size()
+    def counter=new AtomicInteger(size)
+    start=System.currentTimeSeconds()
+    tempPkgs.stream().parallel().forEach({
+        def antBuilder=new groovy.util.AntBuilder()
+        antBuilder.path(id:'sputnik.test.classpath'){
+            pathelement (path:project.getTestClasspathElements())
+        }
+        antBuilder.taskdef(name:'groovyc',classname:'org.codehaus.groovy.ant.Groovyc'){
+            classpath (refid:'sputnik.test.classpath')
+        }
+        antBuilder.groovyc(destdir:project.build.testOutputDirectory,srcdir:tempSrcDir.resolve(it),indy:true){
+            classpath (refid:'sputnik.test.classpath')
+        }
+        log.info("progress: ${size-counter.decrementAndGet()}/${size},compile groovy source in ${it} successfully")
+    })
+    log.info("compile complete in ${(System.currentTimeSeconds()-start)} seconds")
+}
 
-StringBuilder content = new StringBuilder()
-
-
-def prepend = '''\
-<project  name="ssss">
-    <path id="classpath">
-        <pathelement path="${compile_classpath}"/>
-    </path>
-    <taskdef name="groovyc"
-             classname="org.codehaus.groovy.ant.Groovyc">
-        <classpath refid="classpath"/>
-    </taskdef>
-    <macrodef name="testing">
-        <attribute name="sputnikMod"/>
-        <groovyc destdir="${project.build.testOutputDirectory}"
-                 srcdir="${basedir}/@{sputnikMod}"
-                 indy="true"
-                 listfiles="true">
-            <classpath refid="classpath"/>
-        </groovyc>
-    </macrodef>
-    <target name="aaa">
-        <mkdir dir="${basedir}/src/test/groovy"/>
-        <mkdir dir="${project.build.testOutputDirectory}"/>
-        <parallel>
-'''
-String each=files.collect {
-"           <testing sputnikMod=\"${it}\"/>"
-}.join("\n")
-String append='''
-        </parallel>
-    </target>
-</project>
-'''
-content.append(prepend)
-content.append(each)
-content.append(append)
-
-Files.copy(new ByteArrayInputStream(content.toString().getBytes("UTF-8")),
-        Paths.get("sputnikc.xml"), StandardCopyOption.REPLACE_EXISTING)
-
-
+try {
+    buildSpec("src/test/groovy")
+} catch (e) {
+    log.error(e.getMessage(),e)
+}

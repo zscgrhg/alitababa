@@ -370,21 +370,17 @@
                 <version>1.9.0</version>
                 <executions>
                     <execution>
-                        <phase>none</phase>
+                        <phase>test-compile</phase>
                         <goals>
                             <goal>execute</goal>
                         </goals>
                     </execution>
-                    <!--<execution>
-                        <goals>
-                            <goal>compileTests</goal>
-                        </goals>
-                    </execution>-->
+
                 </executions>
                 <configuration>
                     <scripts>
                         <script>
-                            hello.groovy
+                            sputnik.groovy
                         </script>
                     </scripts>
                 </configuration>
@@ -394,11 +390,13 @@
                         <artifactId>groovy</artifactId>
                         <version>2.5.11</version>
                         <scope>runtime</scope>
+                        <classifier>indy</classifier>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-ant</artifactId>
                         <version>2.5.11</version>
+                        <classifier>indy</classifier>
                         <scope>runtime</scope>
                     </dependency>
                     <dependency>
