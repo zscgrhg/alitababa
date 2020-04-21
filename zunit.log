@@ -1,1 +1,0 @@
-2020-04-21 20:58:08.920 [main] ERROR c.z.s.extension.ObjectGroovyMethods.copyDirty(109) - java.lang.Integer cannot be cast to java.util.Collection

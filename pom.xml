@@ -314,60 +314,18 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.gmaven</groupId>
-                <artifactId>groovy-maven-plugin</artifactId>
-                <version>2.1.1</version>
-                <executions>
-                    <execution>
-                        <phase>none</phase>
-                        <goals>
-                            <goal>execute</goal>
-                        </goals>
-                        <configuration>
-                            <source>${project.basedir}hello.groovy</source>
-                        </configuration>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-all</artifactId>
-                        <version>2.5.11</version>
-                        <type>pom</type>
-                        <scope>runtime</scope>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy</artifactId>
-                        <version>2.5.11</version>
-                        <scope>runtime</scope>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-ant</artifactId>
-                        <version>2.5.11</version>
-                        <scope>runtime</scope>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-templates</artifactId>
-                        <version>2.5.11</version>
-                        <classifier>indy</classifier>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-xml</artifactId>
-                        <version>2.5.11</version>
-                        <classifier>indy</classifier>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
                 <!-- The gmavenplus plugin is used to compile Groovy code. To learn more about this plugin,
                 visit https://github.com/groovy/GMavenPlus/wiki -->
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
                 <version>1.9.0</version>
+                <!--<executions>
+                    <execution>
+                        <goals>
+                            <goal>compileTests</goal>
+                        </goals>
+                    </execution>
+                </executions>-->
                 <executions>
                     <execution>
                         <phase>test-compile</phase>
@@ -375,12 +333,11 @@
                             <goal>execute</goal>
                         </goals>
                     </execution>
-
                 </executions>
                 <configuration>
                     <scripts>
                         <script>
-                            sputnik.groovy
+                            build-spec.groovy
                         </script>
                     </scripts>
                 </configuration>
@@ -399,18 +356,6 @@
                         <classifier>indy</classifier>
                         <scope>runtime</scope>
                     </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-templates</artifactId>
-                        <version>2.5.11</version>
-                        <classifier>indy</classifier>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-xml</artifactId>
-                        <version>2.5.11</version>
-                        <classifier>indy</classifier>
-                    </dependency>
                 </dependencies>
             </plugin>
             <!-- Optional plugins for using Spock -->
@@ -421,14 +366,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
-                    <failIfNoTests>false</failIfNoTests>
+                   <!-- <failIfNoTests>false</failIfNoTests>
                     <parallel>classes</parallel>
                     <forkCount>1C</forkCount>
                     <reuseForks>true</reuseForks>
                     <useFile>false</useFile>
                     <argLine>-Xmx1024m</argLine>
                     <forkedProcessTimeoutInSeconds>0</forkedProcessTimeoutInSeconds>
-                    <forkedProcessExitTimeoutInSeconds>180</forkedProcessExitTimeoutInSeconds>
+                    <forkedProcessExitTimeoutInSeconds>180</forkedProcessExitTimeoutInSeconds>-->
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/*Spec.java</include>

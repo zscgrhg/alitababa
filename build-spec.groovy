@@ -21,7 +21,7 @@ def buildSpec(String round){
     log.info("groovy files:${sourceList.size()}")
     List<String> tempPkgs=new ArrayList<>()
     def k=0
-    def stepSize=5
+    def stepSize=10
     long start=System.currentTimeSeconds()
     for (int i = 0; i < sourceList.size(); i+=stepSize) {
         k++
@@ -34,8 +34,9 @@ def buildSpec(String round){
             Files.copy(groovyFile.toPath(),pkg.resolve(groovyFile.getName()))
         }
     }
-    log.info("copy complete in ${(System.currentTimeSeconds()-start)} seconds")
     def size=tempPkgs.size()
+    log.info("copy ${sourceList.size()} groovy source files to ${size} packages in ${(System.currentTimeSeconds()-start)} seconds")
+
     def counter=new AtomicInteger(size)
     start=System.currentTimeSeconds()
     tempPkgs.stream().parallel().forEach({

@@ -80,7 +80,7 @@ public class AlitababaApplicationIT {
     @Test
     @SneakyThrows
     public void test4() {
-        for (int i = 0; i < 300; i++) {
+        for (int i = 0; i < 200; i++) {
             mvc.perform(MockMvcRequestBuilders
                     .get("/user/2")
                     .accept(MediaType.APPLICATION_JSON))
