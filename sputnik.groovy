@@ -8,11 +8,14 @@ def files = root?.listFiles()
 StringBuilder content = new StringBuilder()
 
 
-def prepend = '''
+def prepend = '''\
 <project  name="ssss">
+    <path id="classpath">
+        <pathelement path="${compile_classpath}"/>
+    </path>
     <taskdef name="groovyc"
              classname="org.codehaus.groovy.ant.Groovyc">
-        <classpath refid="maven.test.classpath"/>
+        <classpath refid="classpath"/>
     </taskdef>
     <macrodef name="testing">
         <attribute name="sputnikMod"/>
@@ -20,7 +23,7 @@ def prepend = '''
                  srcdir="${basedir}/@{sputnikMod}"
                  indy="true"
                  listfiles="true">
-            <classpath refid="maven.test.classpath"/>
+            <classpath refid="classpath"/>
         </groovyc>
     </macrodef>
     <target name="aaa">
