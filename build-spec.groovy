@@ -2,7 +2,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 import java.util.concurrent.atomic.AtomicInteger
 
-def buildSpec(String round){
+def buildSpec(String specDir){
     def antUtil=new groovy.util.AntBuilder()
     def tempDir= Paths.get(project.build.directory).resolve("sputnik-temp")
     def tempSrcDir= tempDir.resolve("src")
@@ -11,7 +11,7 @@ def buildSpec(String round){
     antUtil.mkdir(dir:tempDir)
     antUtil.mkdir(dir:tempSrcDir)
     antUtil.mkdir(dir:sputnikClasses)
-    def sourceDir=project.basedir.toPath().resolve(round).toFile()
+    def sourceDir=project.basedir.toPath().resolve(specDir).toFile()
     List<File> sourceList=new ArrayList<>()
     sourceDir.eachFileRecurse{
         if(it.name.endsWith(".groovy")){
@@ -40,6 +40,7 @@ def buildSpec(String round){
     def counter=new AtomicInteger(size)
     start=System.currentTimeSeconds()
     tempPkgs.stream().parallel().forEach({
+        long innerStart=System.currentTimeSeconds()
         def antBuilder=new groovy.util.AntBuilder()
         antBuilder.path(id:'sputnik.test.classpath'){
             pathelement (path:project.getTestClasspathElements())
@@ -50,7 +51,7 @@ def buildSpec(String round){
         antBuilder.groovyc(destdir:project.build.testOutputDirectory,srcdir:tempSrcDir.resolve(it),indy:true){
             classpath (refid:'sputnik.test.classpath')
         }
-        log.info("progress: ${size-counter.decrementAndGet()}/${size},compile groovy source in ${it} successfully")
+        log.info("progress: ${size-counter.decrementAndGet()}/${size},${it} compiled successfully in ${(System.currentTimeSeconds()-innerStart)} seconds")
     })
     log.info("compile complete in ${(System.currentTimeSeconds()-start)} seconds")
 }
