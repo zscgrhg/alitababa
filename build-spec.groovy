@@ -48,7 +48,10 @@ def buildSpec(String specDir){
         antBuilder.taskdef(name:'groovyc',classname:'org.codehaus.groovy.ant.Groovyc'){
             classpath (refid:'sputnik.test.classpath')
         }
-        antBuilder.groovyc(destdir:project.build.testOutputDirectory,srcdir:tempSrcDir.resolve(it),indy:true){
+        //project.build.testOutputDirectory
+        def pkgClasses=sputnikClasses.resolve(it)
+        antBuilder.mkdir(dir: pkgClasses)
+        antBuilder.groovyc(destdir:pkgClasses,srcdir:tempSrcDir.resolve(it),indy:true){
             classpath (refid:'sputnik.test.classpath')
         }
         log.info("progress: ${size-counter.decrementAndGet()}/${size},${it} compiled successfully in ${(System.currentTimeSeconds()-innerStart)} seconds")

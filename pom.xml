@@ -287,6 +287,74 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-ant</artifactId>
+            <version>2.5.11</version>
+            <classifier>indy</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.ant</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-junit</artifactId>
+            <version>1.10.7</version>
+            <scope>runtime</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>junit</artifactId>
+                    <groupId>junit</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-launcher</artifactId>
+            <version>1.10.7</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-antlr</artifactId>
+            <version>1.10.7</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-junitlauncher</artifactId>
+            <version>1.10.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.byteman</groupId>
+            <artifactId>byteman-submit</artifactId>
+            <version>4.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.byteman</groupId>
+            <artifactId>byteman-install</artifactId>
+            <version>4.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.byteman</groupId>
+            <artifactId>byteman-bmunit</artifactId>
+            <version>4.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.byteman</groupId>
+            <artifactId>byteman</artifactId>
+            <version>4.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.8</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/../lib/tools.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
@@ -308,10 +376,36 @@
                     <source>1.8</source>
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
+
                     <!--<compilerArgs>
-                        <arg>-J-Xmx16384m -J-Xms1024m -parameters</arg>
+                        <arg>-Xverify:none -J-Xmx16384m -J-Xms1024m -parameters</arg>
                     </compilerArgs>-->
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.2</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>process-test-resources</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.jboss.byteman</groupId>
+                                    <artifactId>byteman</artifactId>
+                                    <version>4.0.10</version>
+                                    <destFileName>byteman.jar</destFileName>
+                                    <outputDirectory>${project.build.directory}/sputnik-lib/lib</outputDirectory>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <!-- The gmavenplus plugin is used to compile Groovy code. To learn more about this plugin,
@@ -328,20 +422,41 @@
                 </executions>-->
                 <executions>
                     <execution>
+                        <id>build-spec</id>
                         <phase>test-compile</phase>
                         <goals>
                             <goal>execute</goal>
                         </goals>
+                        <configuration>
+                            <scripts>
+                                <script>
+                                    build-spec.groovy
+                                </script>
+                            </scripts>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>run-spec</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>execute</goal>
+                        </goals>
+                        <configuration>
+                            <scripts>
+                                <script>
+                                    run-spec.groovy
+                                </script>
+                            </scripts>
+                        </configuration>
                     </execution>
                 </executions>
-                <configuration>
-                    <scripts>
-                        <script>
-                            build-spec.groovy
-                        </script>
-                    </scripts>
-                </configuration>
+
                 <dependencies>
+                    <dependency>
+                        <groupId>com.zte</groupId>
+                        <artifactId>sputnik</artifactId>
+                        <version>0.0.10-SNAPSHOT</version>
+                    </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy</artifactId>
@@ -354,6 +469,53 @@
                         <artifactId>groovy-ant</artifactId>
                         <version>2.5.11</version>
                         <classifier>indy</classifier>
+                        <exclusions>
+                            <exclusion>
+                                <groupId>org.apache.ant</groupId>
+                                <artifactId>*</artifactId>
+                            </exclusion>
+                        </exclusions>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-junit</artifactId>
+                        <version>1.10.7</version>
+                        <scope>runtime</scope>
+                        <exclusions>
+                            <exclusion>
+                                <artifactId>junit</artifactId>
+                                <groupId>junit</groupId>
+                            </exclusion>
+                        </exclusions>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-launcher</artifactId>
+                        <version>1.10.7</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-junit</artifactId>
+                        <version>1.10.7</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-junit4</artifactId>
+                        <version>1.10.7</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-antlr</artifactId>
+                        <version>1.10.7</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.zte</groupId>
+                        <artifactId>sputnik</artifactId>
+                        <version>0.0.10-SNAPSHOT</version>
                         <scope>runtime</scope>
                     </dependency>
                 </dependencies>
@@ -366,14 +528,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
-                   <!-- <failIfNoTests>false</failIfNoTests>
+                    <failIfNoTests>false</failIfNoTests>
                     <parallel>classes</parallel>
-                    <forkCount>1C</forkCount>
+                    <forkCount>0.75C</forkCount>
                     <reuseForks>true</reuseForks>
                     <useFile>false</useFile>
-                    <argLine>-Xmx1024m</argLine>
+                    <argLine>-Xverify:none -Xmx512m</argLine>
                     <forkedProcessTimeoutInSeconds>0</forkedProcessTimeoutInSeconds>
-                    <forkedProcessExitTimeoutInSeconds>180</forkedProcessExitTimeoutInSeconds>-->
+                    <forkedProcessExitTimeoutInSeconds>180</forkedProcessExitTimeoutInSeconds>
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/*Spec.java</include>
@@ -490,6 +652,32 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>rename_target</id>
+                        <phase>pre-clean</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <tstamp>
+                                    <format property="targetTstamp"
+                                            pattern="yyyyMMdd-HHmmss" locale="en,US" />
+                                </tstamp>
+                                <move todir="trash/target-${targetTstamp}"
+                                      failonerror="false">
+                                    <fileset dir="target/" />
+                                </move>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
         </plugins>
     </build>
 
