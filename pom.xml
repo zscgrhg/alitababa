@@ -402,6 +402,24 @@
                                     <destFileName>byteman.jar</destFileName>
                                     <outputDirectory>${project.build.directory}/sputnik-lib/lib</outputDirectory>
                                 </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.jboss.byteman</groupId>
+                                    <artifactId>byteman-bmunit</artifactId>
+                                    <version>4.0.10</version>
+                                    <outputDirectory>${project.build.directory}/sputnik-lib/lib</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.jboss.byteman</groupId>
+                                    <artifactId>byteman-submit</artifactId>
+                                    <version>4.0.10</version>
+                                    <outputDirectory>${project.build.directory}/sputnik-lib/lib</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.jboss.byteman</groupId>
+                                    <artifactId>byteman-install</artifactId>
+                                    <version>4.0.10</version>
+                                    <outputDirectory>${project.build.directory}/sputnik-lib/lib</outputDirectory>
+                                </artifactItem>
                             </artifactItems>
                         </configuration>
                     </execution>
